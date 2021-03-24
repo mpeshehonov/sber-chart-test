@@ -1,0 +1,19 @@
+header.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+
+  .header__logo, .header__logo a, .header__logo a:hover {
+    color: var(--red);
+    font-weight: bolder;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: x-large;
+  }
+
+  .header__button {
+    align-items: flex-end;
+  }
+}
+
+

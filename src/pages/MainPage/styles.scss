@@ -1,0 +1,65 @@
+.search {
+  position: relative;
+  top: 25px;
+  margin: 0 auto;
+  background: var(--white);
+  box-shadow: 0 4px 128px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 10px 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 50vw;
+  }
+
+  &__input .ant-input-wrapper {
+    background: #f8f8f8;
+
+    .ant-input-affix-wrapper, input.ant-input {
+      background: #e9eaee;
+    }
+  }
+}
+
+.application {
+  border: none;
+  border-radius: 16px;
+}
+
+.gray-row {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: var(--gray);
+}
+
+#ables {
+  .ant-card {
+    margin: 0 auto;
+
+    .ant-card-cover {
+      background-color: var(--brand);
+      border-radius: 16px;
+      height: 7rem;
+
+      img {
+        position: relative;
+        bottom: 60%;
+      }
+    }
+
+    .ant-card-meta-description {
+      color: var(--black);
+    }
+  }
+}
+
+#build {
+  .upload-wrapper {
+    background-color: #f8f8f8;
+    border-radius: 16px;
+    padding: 5%;
+
+    @media screen and (min-width: 768px){
+      padding: 5% 30%;
+    }
+  }
+}

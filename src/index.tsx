@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router} from 'react-router-dom';
+import Routes from './pages/routes';
+import PageLayout from './shared/components/PageLayout';
+import 'antd/dist/antd.css';
+import './styles.scss';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <PageLayout>
+      <Routes />
+    </PageLayout>
+  </Router>,
   document.getElementById('root')
 );
 

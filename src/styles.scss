@@ -1,0 +1,58 @@
+:root {
+  --black: #303030;
+  --white: #fff;
+  --brand: #016c3e;
+  --gray: #e9eaee;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: medium;
+}
+
+.ant-layout {
+  background-color: var(--white);
+}
+
+.ant-row {
+  padding: 1rem 2rem;
+}
+
+.gray-background {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background-color: var(--gray);
+}
+
+h1.ant-typography, .ant-typography h1, h1 {
+  font-weight: 900;
+  font-size: xxx-large;
+}
+
+$max: 10;
+$offset: 1;
+$unit: 'rem'; // Feel free to change the unit.
+
+@mixin list-loop($className, $styleName) {
+  $i: 0;
+  @while $i <= $max {
+    #{$className + $i} {
+      #{$styleName}: #{$i + $unit} !important;
+    }
+    $i: $i + $offset;
+  }
+}
+
+// Margins
+@include list-loop('.mt-', 'margin-top');
+@include list-loop('.mr-', 'margin-right');
+@include list-loop('.mb-', 'margin-bottom');
+@include list-loop('.ml-', 'margin-left');
+@include list-loop('.mx-', 'margin');
+
+// Paddings
+@include list-loop('.pt-', 'padding-top');
+@include list-loop('.pr-', 'padding-right');
+@include list-loop('.pb-', 'padding-bottom');
+@include list-loop('.pl-', 'padding-left');
+@include list-loop('.px-', 'padding');
